@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% from "form_macros.html" import render_field %}
+
+{% block title %}
+Encounter -- Time to Fight!
+{% endblock %}
+
+{% block content %}
+ <section>
+     <h1>Enter Stats</h1>
+     <form action="" method="post">
+         {{form.hidden_tag()}}
+         <table>
+             <tr>
+                 <td><h2>Hero:</h2></td>
+             </tr>
+             <tr>
+                 <td>{{ render_field(form.hstam, size = 25) }}</td>
+             </tr>
+             <tr>
+                 <td>{{ render_field(form.hskill, size = 25) }}</td>
+             </tr>
+             <tr>
+                 <td>{{ render_field(form.hluck, size = 25) }}</td>
+             </tr>
+             <tr>
+                 <td>***************</td>
+                 <td>*****************************************</td>
+             </tr>
+             <tr>
+                 <td><h2>Enemy:</h2></td>
+             </tr>
+             <tr>
+                 <td>{{ render_field(form.estam, size = 25) }}</td>
+             </tr>
+             <tr>
+                 <td>{{ render_field(form.eskill, size = 25) }}</td>
+             </tr>
+             <tr>
+                 <td><button type="submit">Fight!</button></td>
+             </tr>
+         </table>
+     </form>
+ </section>
+{% endblock%}
+
+{% block sidebar %}
+{% endblock %}

@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block title %}
+Welcome to Fighting Fantasy!
+{% endblock %}
+
+{% block content %}
+    <article>
+        <header>
+            <h1>What is Fighing Fantasy?</h1>
+            <p>No it's not an attempt to remove fantasy from the world, in fact I would like to see more in the world.</p>
+            <p>Fighting Fantasy is actually a book series (I believe there are 53 of them) of choose your own adventure gamebooks. This means not only are they choose your own adventure, but they are RPG/Table top games requiring dice to be rolled for battles and other situations.</p>
+        </header>
+        <section>
+            <h2>Okay so why am I looking at a web application about books?</h2>
+            <p>Well there are a couple of reasons for that.</p>
+            <ul>
+                <li>I'm lazy and don't know where my dice are.</li>
+                <li>I wanted to code something.</li>
+                <li>I can't give you the books but I can give you a free system to play them if you find them.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>So what is this web app?</h2>
+            <p>Put simple this web app is to handle the encounters meet in a fighting fantasy book.</p>
+            <p>This Python Flask web app is designed to accept your characters stats and those of any enemy encountered and complete the following:</p>
+            <ul>
+                <li>Roll your dice</li>
+                <li>Roll the enemy dice</li>
+                <li>Calculate who won the round</li>
+                <li>Ask if you would like to use luck to modify the outcome of the round</li>
+                <li>Calculate damage agains you or the enemy</li>
+                <li>Keep track of health until you or the enemy is dead</li>
+            </ul>
+        </section>
+        <footer>
+            <h3>Comming soon features!</h3>
+            <p>The scope of this app is growing rapidly in my mind so it's going to take a bit to code it all out. Here's a list of things I would like to add to the application:</p>
+            <ul>
+                <li>Book of monsters (database containing all the encounter enemies with their stats, encounter page updated to allow click on enemy for encounter)</li>
+                <li>^^^^ This may need to be broken out by book as I believe some monsters have different stats in different books of the series</li>
+                <li>Test your luck (TYL, 2 die roll, with modifier options, for non combat luck rolls)</li>
+                <li>Inventory system</li>
+                <li>Map (this is a huge undertaking, not sure how I would want to do this yet)</li>
+            </ul>
+        </footer>
+    </article>
+{% endblock %}
+                <aside>
+                    <h3>What else can it do?</h3>
+                    <p>My inspiration for this Python Flask web app project was the Fighting Fantasy series but I see no reason this application couldn't be adjusted for other series of similar books. Please feel free to fork/clone from my Github repo and modify the application to fit your needs.</p>
+                    <a href="https://github.com/desertbadger/FightingFantasy.git">Fighting Fantasy Project Github</a>
+                </aside>
+
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+        <div class="footer-container">
+            <footer class="wrapper">
+                <h3>Fighting Fantasy Project 2016, this is not for sale, code available on Github</h3>
+            </footer>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../static/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
